@@ -62,7 +62,7 @@ class MangaCrawler:
 
     def find_updated(self):
         self.get_manga(["On-Hold", "Plan to Read"])
-        print(len(self.all_manga))
+        print((len(self.all_manga)))
         rows = [["Name", "Read Chapters", "New Chapters", "MangaFox", "MAL"]]
         for manga in self.all_manga:
             row = self.manga_site.get_updated_manga(manga, self.settings.min_chapters, self.settings.azure_account_key)

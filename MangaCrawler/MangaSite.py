@@ -81,8 +81,8 @@ class MangaSite:
     def get_genres(self, question):
         genres = self.genres
         for key, genre in enumerate(genres):
-            print("%s) %s" % (key, genre))
-        input_srt = input(question)
+            print(("%s) %s" % (key, genre)))
+        input_srt = eval(input(question))
         keys = [int(s) for s in input_srt.split() if s.isdigit()]
         genres = [i for j, i in enumerate(genres) if j in keys]
         if self.verbose:

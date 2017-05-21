@@ -52,5 +52,5 @@ class Settings:
         if self.find is False or self.site is False or (self.find == "updated" and not self.azure_account_key):
             print(example)
             return False
-        print(self.azure_account_key)
+        print((self.azure_account_key))
         return True

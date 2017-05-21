@@ -5,7 +5,7 @@
 """
 import os
 import glob
-import xml.etree.ElementTree as eT
+from . import xml.etree.ElementTree as eT
 import ntpath
 
 
@@ -32,7 +32,7 @@ class XML:
                 string = "%s) %s" % (0, "Don't use MyAnimeList XML file.")
                 print(string)
                 try:
-                    file_no = int(input("Select file: "))
+                    file_no = int(eval(input("Select file: ")))
                 except ValueError:
                     print("Give a number!")
                     file_no = -1

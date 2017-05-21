@@ -19,7 +19,7 @@ class MAL:
         if not mangas:
             mangas = self.mangas
         for manga in mangas:
-            print("%s %s %s" % (manga.name, manga.status, manga.chapters))
+            print(("%s %s %s" % (manga.name, manga.status, manga.chapters)))
 
     def parse(self, file_path=None):
         root = self.XML.get_xml_root(file_path)

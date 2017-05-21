@@ -4,7 +4,7 @@
   10/2016
 """
 from .MangaSite import MangaSite
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import re
 import urllib.request
 import urllib.parse
